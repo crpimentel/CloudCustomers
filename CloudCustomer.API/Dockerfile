@@ -1,7 +1,7 @@
 # ----------- Build Stage -------------
 FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 
-WORKDIR /source
+WORKDIR /source/CloudCustomer.API
 
 # Copy everything from the current directory (where the Dockerfile lives)
 COPY . .
