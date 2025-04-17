@@ -7,7 +7,7 @@ WORKDIR /source/CloudCustomer.API
 COPY . .
 
 # Restore dependencies
-RUN dotnet restore "CloudCustomer.API.csproj" --disable-parallel
+RUN dotnet restore "./CloudCustomer.API.csproj" --disable-parallel
 
 # Publish the app
 RUN dotnet publish "CloudCustomer.API.csproj" -c Release -o /app --no-restore
