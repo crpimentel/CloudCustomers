@@ -63,5 +63,5 @@ jobs:
       - name: Deploy to Azure Web App (container)
         uses: azure/webapps-deploy@v2
         with:
-          app-name: cloud-customer-api
+          app-name: cloudcustomerapi
           images: ${{ secrets.DOCKERHUB_USERNAME }}/dockerfordotnetapi:latest
